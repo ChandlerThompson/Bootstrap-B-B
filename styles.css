@@ -1,0 +1,86 @@
+/* set the background for the body */
+body{
+  background: url(images/background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+/* set up the grid for the cards */
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+.cards{
+  display: grid;
+  grid-template-areas:
+  'card1 card2 card3';
+  grid-gap: 150px;
+  padding: 10px;
+  justify-content: center;
+  background-color: #e3f2fd;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: .8;
+}
+
+
+h1{
+  text-align: center;
+  background-color: #e3f2fd;
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+.navbar{
+  border-radius: 0px 0px 25px 25px;
+  margin-bottom: 10px;
+}
+
+.imgBorder{
+  border-radius: 25px;
+}
+
+.carousel{
+  margin-bottom: 10px;
+}
+
+/* set the background for all these classes */
+.aboutus, .amenities, .rooms, .ourinfo, .contact{
+  background-color: #e3f2fd;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  opacity: .8;
+}
+
+.ourinfo{
+  text-align: center;
+}
+
+/* change the grids gap size to help fit the screen */
+@media screen and (max-width:1400px){
+  .cards{
+    grid-gap: 50px;
+  }
+}
+
+/* change the grid to stack the cards */
+@media screen and (max-width:1200px){
+  .cards{
+    grid-gap: 50px;
+    grid-template-areas:
+    'card1'
+    'card2'
+    'card3';
+  }
+}
+
+/* change the iframe width and height to make it fit on the screen */
+@media screen and (max-width:800px) {
+  iframe{
+    width: 350px;
+    height: 200px;
+  }
+
+}
