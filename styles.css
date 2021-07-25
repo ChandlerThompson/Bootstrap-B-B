@@ -58,7 +58,7 @@ h1{
   text-align: center;
 }
 
-/* change the grids gap size to help fit the screen */
+/* change the grid gap size to help fit the screen */
 @media screen and (max-width:1400px){
   .cards{
     grid-gap: 50px;
